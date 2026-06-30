@@ -8,6 +8,17 @@
   <title>Current HTTP</title>
 </head>
 <body>
+  <div class="w3-top">
+      <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+        <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+        <a href="history.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">History of HTML</a>
+        <a href="current.html" class="w3-bar-item w3-button w3-padding-large w3-white">HTML Currently</a>
+        <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Future of HTML</a>
+        <a href="concepts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Key Concepts</a>
+        <a href="me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">About Me</a>
+        <a href="references.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">References</a>
+      </div>
+    </div>
   <h1>The Current State of HTTP</h1>
   <p>There was a marked advancement in latency with the implementation of HTTP/3 because it uses the QUIC protocol instead of TCP, and it is the most advanced of the technologies. Since QUIC uses UDP to run multiple streams, the multiplexing works more efficiently. If there is packet loss and a stream needs to be blocked, UDP allows a single stream to be blocked, which is an improvement over having to block all streams on the TCP connection. This allows the transmission of data to continue on the other streams using the QUIC protocol (“Evolution of”, 2026).
 Although HTTP/3 is the most advanced and provides the most benefits, it’s still not the most widely used in systems today. There are many reasons why this is true. One is that a corporate proxy might not support the newer version of HTTP, so it could downgrade it to a lower version so that its legacy system could handle it. Other reasons could include firewalls that block all UDP traffic, a device, or a middlebox, between the client and server that strips or drops UDP packets, or it could be caused by routers that are not up to date. According to Kuruba (2025), when he analyzed his company's load balancer logs, he found that 63 percent of all requests they received were coming from the older version HTTP/1.1. This makes it clear that companies could improve their latency and reduce costs if they are willing to invest in upgrades.
