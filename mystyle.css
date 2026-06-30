@@ -13,3 +13,6 @@ a {
 a:hover, a:focus {
   color: #2c3e50;
 }
+h1 {
+  text-align: center;
+}
