@@ -4,11 +4,18 @@ body {
   padding-top: 55px;
   background-color: lightblue;
   font-family: 'Montserrat', sans-serif;
+  <!--Make the links underlined and change color when hovered over-->
+a {
+  color: #27ae60;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 a:hover, a:focus {
   color: #1e8449;
+  text-decoration: underline;
   
 }
+<!--To align headings in the center-->
 h1 {
   text-align: center;
 }
