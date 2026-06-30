@@ -1,24 +1,70 @@
 <!DOCTYPE html>
-<html lang ="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The History of HTTP</title>
-</head>
-<body>
-  <h1>The History of HTML</h1>
-  <h2>HTTP/0.9</h2>
-  <p>...</p>
-  <h2>HTTP/1.0</h2>
-  <p>...</p>
-  <h2>HTTP/1.1</h2>
-  <p>...</p>
-  <h2>HTTP/2</h2>
-  <p>...</p>
-  <h2>HTTP/3</h2>
-  <p>...</p>
-  <nav>
-    <!-- To go to index -->
-    <a href="../index.html"> Back to Homepage</a>
-  </nav>
-</body>
+  <html lang ="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The History of HTTP</title>
+  </head>
+  <body>
+    <!-- a table to display the history of HTTP-->
+    <table>
+      <thead>
+        <tr>
+          <th>HTTP Version</th>
+          <th>Year</th>
+          <th>Major Improvements</th>
+          <th>Limitations</th>
+        </tr>
+      </thead>
+      <!--body of table row by row-->
+      <tbody>
+        <tr>
+          <td>HTTP/0.9</td> 
+          <td>1991</td>
+          <td>Simple GET requests, transferred basic HTML pages</td>
+          <td>Only supported GET, no headers, no status codes, text only</td>
+        </tr>
+        <tr>
+          <td>HTTP/1.0</td> 
+          <td>1993</td>
+          <td>Added HTTP headers, status codes, support for different file types</td>
+          <td>Opened a new TCP connection for every request, reducing performance</td>
+        </tr>
+        <tr>
+          <td>HTTP/1.1</td> 
+          <td>1997</td>
+          <td>Persistent TCP connections, caching, pipelining, standardized protocol</td>
+          <td>Still experienced head-of-line blocking and limited concurrency</td>
+        </tr>
+        <tr>
+          <td>HTTP/2</td> 
+          <td>2015</td>
+          <td>Multiplexing, request prioritization, header compression, single TCP connection</td>
+          <td>TCP head-of-line blocking could still occur if packets were lost</td>
+        </tr>
+        <tr>
+          <td>HTTP/3</td> 
+          <td>2022</td>
+          <td>Uses QUIC over UDP, lower latency, improved multiplexing, better security</td>
+          <td>Adoption is still growing because many systems use older infrastructure</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>The History of HTML</h1>
+    <h2>HTTP/0.9</h2>
+    <p>...</p>
+    <h2>HTTP/1.0</h2>
+    <p>...</p>
+    <h2>HTTP/1.1</h2>
+    <p>...</p>
+    <h2>HTTP/2</h2>
+    <p>...</p>
+    <h2>HTTP/3</h2>
+    <p>...</p>
+    <nav>
+      <!-- To go to index -->
+      <a href="../index.html"> Back to Homepage</a>
+    </nav>
+  </body>
+</html>
+
