@@ -7,7 +7,7 @@ body {
 }
 a {
   color: #3498db;
-  tesxt-decoration: none;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 a:hover, a:focus {
