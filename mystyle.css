@@ -3,6 +3,7 @@
 body {
   padding-top: 50px;
   padding-right: 30px;
+  padding-left: 30px;
   background-color: lightblue;
   font-family: 'Montserrat', sans-serif;
   /*Make the links underlined and change color when hovered over*/
