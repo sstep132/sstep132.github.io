@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
 
 body {
-  padding-top: 50px;
+  margin: 0;
+  padding-top: 60px;
   padding-right: 30px;
   padding-left: 30px;
   background-color: lightblue;
   font-family: 'Montserrat', sans-serif;
   /*Make the links underlined and change color when hovered over*/
+}
+.w3-top {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.container {
+  margin-top: 10px;
+}
 a {
   color: #27ae60;
   text-decoration: none;
