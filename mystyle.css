@@ -15,7 +15,11 @@ a:hover, a:focus {
   text-decoration: underline;
   
 }
-<!--To align headings in the center-->
+/*To align headings in the center, light yellow background,*/
 h1 {
   text-align: center;
+  background-color: #fffae6;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 20px;
 }
