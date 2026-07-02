@@ -7,7 +7,6 @@ body {
   padding-left: 30px;
   background-color: lightblue;
   font-family: 'Montserrat', sans-serif;
-  /*Make the links underlined and change color when hovered over*/
 }
 .w3-top {
   top: 0;
@@ -18,11 +17,13 @@ body {
 .container {
   margin-top: 20px;
 }
+ /*For the links*/
 a {
   color: #27ae60;
   text-decoration: none;
   transition: color 0.3s ease;
 }
+/*to make link underlined and change color.*/
 a:hover, a:focus {
   color: #1e8449;
   text-decoration: underline;
