@@ -63,6 +63,14 @@ h1.heading {
 .footer {
   grid-area: content;
 }
+.container {
+  display: grid;
+  grid-template-areas:
+    "image"
+    "content"
+    "footer";
+  grid-template-columns: 1fr;
+}
 /*For mobile switches from being split up to being all vertical*/
 @media (max-width: 768ps) {
   .container {
