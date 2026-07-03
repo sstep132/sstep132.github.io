@@ -52,5 +52,9 @@ h1 {
   object-fit: cover;
   display: block;
 }
+h1.header {
+  padding-bottom: 10px;
+}
+
 
 
