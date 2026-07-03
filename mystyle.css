@@ -50,13 +50,13 @@ h1.heading {
 }
 /* to link areas*/
 .image {
-  grid-are: image;
+  grid-area: image;
 }
 .content {
   grid-area: content;
 }
 .footer {
-  grid-area: content;
+  grid-area: footer;
   text-align: center;
 }
 /*To make sure pictures display correctly*/
@@ -68,7 +68,7 @@ h1.heading {
   display: block;
 }
 /*For mobile switches from being split up to being all vertical*/
-@media (max-width: 768ps) {
+@media (max-width: 768px) {
   .container {
     grid-template-areas:
       "image"
