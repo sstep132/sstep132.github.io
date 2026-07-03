@@ -54,3 +54,20 @@ h1.heading {
   object-fit: cover;
   display: block;
 }
+/*For mobile switches from being split up to being all vertical*/
+@media (max-width: 768ps) {
+  .container {
+    grid-template-areas:
+      "image"
+      "content"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
