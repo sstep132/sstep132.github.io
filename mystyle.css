@@ -38,6 +38,10 @@ h1 {
   margin: 0 auto;
   padding: 10px 20px;
 }
+/*add space above table*/
+h1.header {
+  margin-bottom: 10px;
+}
 /*To make sure the image fits the part of the container it's in*/
 .image img {
   width: 100%;
@@ -52,10 +56,7 @@ h1 {
   object-fit: cover;
   display: block;
 }
-/*add space above table*/
-h1.header {
-  margin-bottom: 10px;
-}
+
 
 
 
