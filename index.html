@@ -12,14 +12,25 @@
     <!--For navigation bar on top...not for mobile-->
     <div class="w3-top">
       <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-        <a href="pages/history.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">History of HTML</a>
-        <a href="pages/current.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">HTML Currently</a>
-        <a href="pages/future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Future of HTML</a>
-        <a href="pages/concepts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Key Concepts</a>
-        <a href="pages/me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">About Me</a>
-        <a href="pages/references.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">References</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+          <a href="pages/history.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">History of HTML</a>
+          <a href="pages/current.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">HTML Currently</a>
+          <a href="pages/future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Future of HTML</a>
+          <a href="pages/concepts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Key Concepts</a>
+          <a href="pages/me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">About Me</a>
+          <a href="pages/references.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">References</a>
       </div>
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="pages/history.html" class="w3-bar-item w3-button w3-padding-large">History of HTML</a>
+        <a href="pages/current.html" class="w3-bar-item w3-button w3-padding-large">HTML Currently</a>
+        <a href="pages/future.html" class="w3-bar-item w3-button w3-padding-large">Future of HTML</a>
+        <a href="pages/concepts.html" class="w3-bar-item w3-button w3-padding-large">Key Concepts</a>
+        <a href="pages/me.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
+        <a href="pages/references.html" class="w3-bar-item w3-button w3-padding-large">References</a>
+      </div>
+    </div>
     </div>
 
     <!--Beginning of grid-->
@@ -56,5 +67,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
