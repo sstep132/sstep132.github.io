@@ -39,51 +39,62 @@
 <title>References</title>
 </head>
 <body>
-  <!--This makes the navigation bar at the top-->
+  <!--For navigation bar on top...not for mobile-->
   <div class="w3-top">
     <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-      <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
-      <a href="history.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">History of HTML</a>
-      <a href="current.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">HTML Currently</a>
-      <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Future of HTML</a>
-      <a href="concepts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Key Concepts</a>
-      <a href="me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">About Me</a>
-      <a href="references.html" class="w3-bar-item w3-button w3-padding-large w3-white">References</a>
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">&#9776;</a>
+      <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-hide-small">Home</a>
+      <a href="history.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">History of HTML</a>
+      <a href="current.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">HTML Currently</a>
+      <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">Future of HTML</a>
+      <a href="concepts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">Key Concepts</a>
+      <a href="me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">About Me</a>
+      <a href="references.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">References</a>
+    </div>
+    <!-- for mobile nav bar-->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+      <a href="history.html" class="w3-bar-item w3-button w3-padding-large">History of HTML</a>
+      <a href="current.html" class="w3-bar-item w3-button w3-padding-large">HTML Currently</a>
+      <a href="future.html" class="w3-bar-item w3-button w3-padding-large">Future of HTML</a>
+      <a href="concepts.html" class="w3-bar-item w3-button w3-padding-large">Key Concepts</a>
+      <a href="me.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
+      <a href="references.html" class="w3-bar-item w3-button w3-padding-large">References</a>
     </div>
   </div>
   <!--middle left-->
-<div class="container">
-  <div class="image">
-    <img src="../images/people.png" alt="A Picture of People Connected">
-  </div>
-  <!--middle right-->
-  <div class="content">
-    <h1>References and Resources</h1>
-    <ul>
-      <li>Awati, R., Chai, W., Ferguson, K., (2025, February 3). <i>What is HTTP and how does it work? Hypertext Transfer Protocol.</i> TechTarget. <a href="https://www.techtarget.com/whatis/definition/HTTP-Hypertext-Transfer-Protocol">https://www.techtarget.com/whatis/definition/HTTP-Hypertext-Transfer-Protocol</a></li>
-      <li>Belshe, M., Peon, R., Thomson, M. (2015, May). <i>Hypertext Transfer Protocol Version 2 (HTTP/2).</i> Internet Engineering Task Force. <a href="https://datatracker.ietf.org/doc/html/rfc7540#page-4">https://datatracker.ietf.org/doc/html/rfc7540#page-4</a></li>
-      <li>Dhangar, A. (2024, November 30). <i>HTML 1.0 - The Foundation of Web Development.</i> HTML Mastery. <a href="https://html-mastery.github.io/version/html-1/">https://html-mastery.github.io/version/html-1/</a></li>
-      <li>Fili. (2026, June 5). <i>HTTP Status Codes.</i> http.dev. <a href="https://http.dev/status">https://http.dev/status</a></li>
-      <li>GeeksforGeeks. (2026, April 4). <i>HTTP - Hypertext Transfer Protocol.</i> <a href="https://www.geeksforgeeks.org/blogs/http-full-form/">https://www.geeksforgeeks.org/blogs/http-full-form/</a></li>
-      <li>Haigh, T. (2016). <i>Sir Tim Berners-Lee.</i> ACM A.M. Turing Award. <a href="https://amturing.acm.org/award_winners/berners-lee_8087960.cfm">https://amturing.acm.org/award_winners/berners-lee_8087960.cfm</a></li>
-      <li>Kuruba, S. (2025, December 2). <i>HTTP/1.1 vs HTTP/2 vs HTTP/3 – Which One Are You Still Using in 2025?</i> DEV Community. <a href="https://dev.to/sreekanth_kuruba_91721e5d/http11-vs-http2-vs-http3-which-one-are-you-still-using-in-2025-4aah">https://dev.to/sreekanth_kuruba_91721e5d/http11-vs-http2-vs-http3-which-one-are-you-still-using-in-2025-4aah<a/></li>
-      <li>MDN Web Docs. (2026, March 20). <i>Evolution of HTTP.</i> Mozilla. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Evolution_of_HTTP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Evolution_of_HTTP</a></li>
-      <li>MDN Web Docs. (2026, January 26). <i>Overview of HTTP.</i> Mozilla. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview</a></li>
-      <li>MDN Web Docs. (2026, June 22). <i>Media Types (MIME types)</i>. Mozilla. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types</a></li>
-      <li>The Pi Guy Blog. (2024, August 24). The Future of HTTP: Emerging Trends and Technologies. <i>The Pi Guy Blog.</i> <a href="https://the-pi-guy.com/blog/the_future_of_http_emerging_trends_and_technologies/">https://the-pi-guy.com/blog/the_future_of_http_emerging_trends_and_technologies/</a></li>
-    </ul>
+  <div class="container">
+    <div class="image">
+      <img src="../images/people.png" alt="A Picture of People Connected">
+    </div>
+    <!--middle right-->
+    <div class="content">
+      <h1>References and Resources</h1>
+      <ul>
+        <li>Awati, R., Chai, W., Ferguson, K., (2025, February 3). <i>What is HTTP and how does it work? Hypertext Transfer Protocol.</i> TechTarget. <a href="https://www.techtarget.com/whatis/definition/HTTP-Hypertext-Transfer-Protocol">https://www.techtarget.com/whatis/definition/HTTP-Hypertext-Transfer-Protocol</a></li>
+        <li>Belshe, M., Peon, R., Thomson, M. (2015, May). <i>Hypertext Transfer Protocol Version 2 (HTTP/2).</i> Internet Engineering Task Force. <a href="https://datatracker.ietf.org/doc/html/rfc7540#page-4">https://datatracker.ietf.org/doc/html/rfc7540#page-4</a></li>
+        <li>Dhangar, A. (2024, November 30). <i>HTML 1.0 - The Foundation of Web Development.</i> HTML Mastery. <a href="https://html-mastery.github.io/version/html-1/">https://html-mastery.github.io/version/html-1/</a></li>
+        <li>Fili. (2026, June 5). <i>HTTP Status Codes.</i> http.dev. <a href="https://http.dev/status">https://http.dev/status</a></li>
+        <li>GeeksforGeeks. (2026, April 4). <i>HTTP - Hypertext Transfer Protocol.</i> <a href="https://www.geeksforgeeks.org/blogs/http-full-form/">https://www.geeksforgeeks.org/blogs/http-full-form/</a></li>
+        <li>Haigh, T. (2016). <i>Sir Tim Berners-Lee.</i> ACM A.M. Turing Award. <a href="https://amturing.acm.org/award_winners/berners-lee_8087960.cfm">https://amturing.acm.org/award_winners/berners-lee_8087960.cfm</a></li>
+        <li>Kuruba, S. (2025, December 2). <i>HTTP/1.1 vs HTTP/2 vs HTTP/3 – Which One Are You Still Using in 2025?</i> DEV Community. <a href="https://dev.to/sreekanth_kuruba_91721e5d/http11-vs-http2-vs-http3-which-one-are-you-still-using-in-2025-4aah">https://dev.to/sreekanth_kuruba_91721e5d/http11-vs-http2-vs-http3-which-one-are-you-still-using-in-2025-4aah<a/></li>
+        <li>MDN Web Docs. (2026, March 20). <i>Evolution of HTTP.</i> Mozilla. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Evolution_of_HTTP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Evolution_of_HTTP</a></li>
+        <li>MDN Web Docs. (2026, January 26). <i>Overview of HTTP.</i> Mozilla. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview</a></li>
+        <li>MDN Web Docs. (2026, June 22). <i>Media Types (MIME types)</i>. Mozilla. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types</a></li>
+        <li>The Pi Guy Blog. (2024, August 24). The Future of HTTP: Emerging Trends and Technologies. <i>The Pi Guy Blog.</i> <a href="https://the-pi-guy.com/blog/the_future_of_http_emerging_trends_and_technologies/">https://the-pi-guy.com/blog/the_future_of_http_emerging_trends_and_technologies/</a></li>
+      </ul>
     <nav>
     <!-- To go to index -->
       <a href="../index.html"> Back to Homepage</a>
     </nav>  
   
+    </div>
+    <!--bottom-->
+    <div class="footer">
+      <p>This is a class project.</p>
+      <a href="https://ksuweb.github.io/IT3203/">Class Website Link</a>
+    </div>
   </div>
-  <!--bottom-->
-  <div class="footer">
-    <p>This is a class project.</p>
-    <a href="https://ksuweb.github.io/IT3203/">Class Website Link</a>
-  </div>
-         
-</div>
+  <script src="script.js"></script>
 </body>
 </html>
