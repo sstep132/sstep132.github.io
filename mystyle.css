@@ -37,8 +37,8 @@ h1 {
   padding: 10px 20px;
 }
 /*add space above table*/
-h1.header {
-  margin-bottom: 10px;
+h1.heading {
+  margin-bottom: 20px;
 }
 /*To make sure the image fits the part of the container it's in*/
 .image img {
