@@ -54,6 +54,15 @@ h1.heading {
   object-fit: cover;
   display: block;
 }
+.image {
+  grid-are: image;
+}
+.content {
+  grid-area: content;
+}
+.footer {
+  grid-area: content;
+}
 /*For mobile switches from being split up to being all vertical*/
 @media (max-width: 768ps) {
   .container {
