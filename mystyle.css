@@ -16,7 +16,7 @@ body {
   right: 0;
   z-index: 1000;
 }
-/*Grid design adapted from W3Schools Start Page CSS Template and Gride Layout example*/
+/*Grid design adapted from W3Schools Start Page CSS Template and Grid Layout example*/
 /* layout for container to act as a grid*/
 .container {
   display: grid;
