@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+/*So that all the pages start with the same general layout*/
 body {
   margin: 0;
   padding-top: 60px;
@@ -8,12 +9,14 @@ body {
   background-color: lightblue;
   font-family: 'Montserrat', sans-serif;
 }
+/*Instructions on where w3-top is for the navbar*/
 .w3-top {
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
 }
+/* layout for container to act as a grid*/
 .container {
   display: grid;
   grid-template-areas:
@@ -36,7 +39,7 @@ a:hover, a:focus {
   color: #1e8449;
   text-decoration: underline;
 }
-/*To align headings in the center, light yellow background,*/
+/*To style all h1 headings */
 h1 {
   text-align: center;
   background-color: #fff59d;
@@ -44,7 +47,7 @@ h1 {
   margin: 0 auto;
   padding: 10px 20px;
 }
-/*for spacing*/
+/*for spacing heading above table*/
 h1.heading {
   padding-bottom: 20px;
 }
@@ -66,7 +69,7 @@ h1.heading {
   height: auto;
   display: block;
 }
-/*for table container */
+/*for table container so table fits*/
 .table-container {
   width: 100%;
   overflow-x: auto;
@@ -77,10 +80,13 @@ table {
 }
 /*For mobile switches from being split up to being all vertical*/
 @media (max-width: 768px) {
+  /*make padding smaller for small screens*/
   body {
     padding-left: 10px;
     padding-right: 10px;
   }
+  
+  /*change container to vertical layout for mobile*/
   .container {
     grid-template-areas:
       "image"
@@ -88,8 +94,9 @@ table {
       "footer";
     grid-template-columns: 1fr;
   }
-
-.image img {
+  
+  /*auto size image*/
+  .image img {
   height: auto;
   }
 }
