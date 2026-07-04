@@ -63,8 +63,7 @@ h1.heading {
 .image img,
 .w3-third img {
   width: 100%;
-  height: 500px;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 /*For mobile switches from being split up to being all vertical*/
