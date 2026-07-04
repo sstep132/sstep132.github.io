@@ -21,7 +21,7 @@ body {
     "footer footer";
   grid-template-columns: 1fr 2fr;
   gap: 3px;
-  background-color: #333333;
+  background-color: transparent;
   padding: 5px;
   padding-top: 60px;
 }
