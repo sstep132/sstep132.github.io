@@ -1,55 +1,55 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="../mystyle.css">
-    <title>About Me</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="../mystyle.css">
+  <title>About Me</title>
+</head>
+<body>
+
+  <!--Navbar code adapted from W3Schools Start Page CSS Template-->
+  <!--For navigation bar on top...not for mobile-->
+  <div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">&#9776;</a>
+      <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-hide-small">Home</a>
+      <a href="history.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">History of HTTP</a>
+      <a href="current.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">HTTP Currently</a>
+      <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">Future of HTTP</a>
+      <a href="concepts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">Key Concepts</a>
+      <a href="me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">About Me</a>
+      <a href="references.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">References</a>
+    </div>
 
     <!--Navbar code adapted from W3Schools Start Page CSS Template-->
-    <!--For navigation bar on top...not for mobile-->
-    <div class="w3-top">
-      <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">&#9776;</a>
-        <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-hide-small">Home</a>
-        <a href="history.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">History of HTTP</a>
-        <a href="current.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">HTTP Currently</a>
-        <a href="future.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">Future of HTTP</a>
-        <a href="concepts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">Key Concepts</a>
-        <a href="me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">About Me</a>
-        <a href="references.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-hide-small">References</a>
-      </div>
-
-      <!--Navbar code adapted from W3Schools Start Page CSS Template-->
-      <!-- for mobile nav bar-->
-      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-        <a href="history.html" class="w3-bar-item w3-button w3-padding-large">History of HTTP</a>
-        <a href="current.html" class="w3-bar-item w3-button w3-padding-large">HTTP Currently</a>
-        <a href="future.html" class="w3-bar-item w3-button w3-padding-large">Future of HTTP</a>
-        <a href="concepts.html" class="w3-bar-item w3-button w3-padding-large">Key Concepts</a>
-        <a href="me.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
-        <a href="references.html" class="w3-bar-item w3-button w3-padding-large">References</a>
-      </div>
+    <!-- for mobile nav bar-->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+      <a href="history.html" class="w3-bar-item w3-button w3-padding-large">History of HTTP</a>
+      <a href="current.html" class="w3-bar-item w3-button w3-padding-large">HTTP Currently</a>
+      <a href="future.html" class="w3-bar-item w3-button w3-padding-large">Future of HTTP</a>
+      <a href="concepts.html" class="w3-bar-item w3-button w3-padding-large">Key Concepts</a>
+      <a href="me.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
+      <a href="references.html" class="w3-bar-item w3-button w3-padding-large">References</a>
     </div>
+  </div>
     
-    <!--for container that has padding and columns 800 or less px-->
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h1>A Little Bit About Me</h1>
-      <p>My name is Sarah Stephens and I'm currently an Information Technology student at Kennesaw State University and plan to graduate in 2027.
-        I have a strong interest in data analytics, technology, sports, and learning languages. My coursework has covered
-        Python, SQL, R, HTML, CSS and a few other professional tools used in the industry. Outside of school, 
-        I work as a restaurant server which helped me develop strong communication skills while working under pressure.
-        I also manage a small hobby business where I have gained experience in communication, business operations, customer
-        service, and sales while maintaining a 5-star reputation.</p>
-      <nav class="w3-padding-16">
-        <!-- To go to index -->
-        <a href="../index.html"> Back to Homepage</a>
-      </nav>
-    </div>
-    <script src="../script.js"></script>
-  </body>
+  <!--for container that has padding and columns 800 or less px-->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h1>A Little Bit About Me</h1>
+    <p>My name is Sarah Stephens and I'm currently an Information Technology student at Kennesaw State University and plan to graduate in 2027.
+      I have a strong interest in data analytics, technology, sports, and learning languages. My coursework has covered
+      Python, SQL, R, HTML, CSS and a few other professional tools used in the industry. Outside of school, 
+      I work as a restaurant server which helped me develop strong communication skills while working under pressure.
+      I also manage a small hobby business where I have gained experience in communication, business operations, customer
+      service, and sales while maintaining a 5-star reputation.</p>
+    <nav class="w3-padding-16">
+      <!-- To go to index -->
+      <a href="../index.html"> Back to Homepage</a>
+    </nav>
+  </div>
+  <script src="../script.js"></script>
+</body>
 </html>
