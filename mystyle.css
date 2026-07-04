@@ -68,6 +68,10 @@ h1.heading {
 }
 /*For mobile switches from being split up to being all vertical*/
 @media (max-width: 768px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .container {
     grid-template-areas:
       "image"
