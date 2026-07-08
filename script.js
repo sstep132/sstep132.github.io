@@ -76,7 +76,7 @@ function gradeQuiz(e) {
             const percentage = total > 0 ? Math.round((score / total) * 100) : 0;
             
             /*this makes the score display as a rounded percentage*/
-            resultText += `<br><strong>Total Score: ${percentage}% (${score}/${total}</strong><br>`;
+            resultText += `<br><strong>Total Score: ${percentage}% (${score}/${total})</strong><br>`;
             
             resultText += score >= 3 ? "<br><span style='color:green'>Congratulations! You Passed!</span>" : "<span style='color:red'>Sorry. You Failed.</span><br>";
             resultText += `<br>Stars: ${stars}<br>`;
