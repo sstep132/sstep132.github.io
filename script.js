@@ -20,7 +20,9 @@ function myFunction() {
 <!-- Availability: https://reecewoodard.github.io/IT3203/quiz.html -->
 <!-- I used this code as a reference for the design of the quiz on this page. I modified it -->
 <!-- so that...--> */
-function gradeQuiz() {
+function gradeQuiz(e) {
+  /*passing the event in to stop the page from reloading*/
+            if (e) e.preventDefault();
             let score = 0;
             const total = 5;
             let resultText = "";
@@ -49,8 +51,8 @@ function gradeQuiz() {
               alert("Please answer Question 5!!!")
               return;
             }
-            if (q5 === "client") { score++; resultText += "Question 4 is correct!!!<br>"; }
-            else { resultText += "Question 4 is incorrect. The answer is client.<br>"; }
+            if (q5 === "client") { score++; resultText += "Question 5 is correct!!!<br>"; }
+            else { resultText += "Question 5 is incorrect. The answer is client.<br>"; }
 
             resultText += `<br><strong>Total Score: ${score}/${total}</strong><br>`;
             resultText += score >= 3 ? "<span style='color:green'>You Passed!</span>" : "<span style='color:red'>You Failed.</span>";
