@@ -97,6 +97,19 @@ table {
   border-radius: 5px;
 }
 
+/* This makes the whole answer to be clickable instead of just the text and adds more space for clicking*/
+.question-block label {
+  display: block;
+  padding: 5px 0;
+}
+
+/* Referencing https://www.w3schools.com/CSSref/sel_hover.php for the hover effect*/
+.question-block label:hover {
+  color: yellow;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /*This colors the stars*/
 .checked {
 color: yellow;
