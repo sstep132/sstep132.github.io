@@ -79,6 +79,19 @@ table {
   width: 100%;
   margin: 0 auto;
 }
+
+/*
+This will style the question blocks for the quiz
+to give them color and make sure the boxes don't touch
+*/
+.question-block {
+  background color: #f9f9f9;
+  border: 1px solid #fff59d;
+  padding: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+
+
 /*For mobile switches from being split up to being all vertical*/
 @media (max-width: 768px) {
   /*make padding smaller for small screens*/
