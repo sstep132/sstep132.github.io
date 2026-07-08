@@ -38,8 +38,8 @@ function gradeQuiz(e) {
 
             /*checks to see if the value for q2 = b. adds results to resultText string depending on q2.value.*/
             const q2 = document.querySelector('input[name="q2"]:checked');
-            if (q2 && q2.value === "b") { score++; resultText += "Question 2 is correct!!!<br>"; }
-            else { resultText += "Question 2 is incorrect. The correct answer is False.<br>"; }
+            if (q2 && q2.value === "a") { score++; resultText += "Question 2 is correct!!!<br>"; }
+            else { resultText += "Question 2 is incorrect. The correct answer is A.<br>"; }
 
             /*checks to what values were checked then looks through the list to see which were included.*/
             /*it then compares those values to see if they were correct and adds the appropriate string to resultText.*/
