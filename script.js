@@ -42,10 +42,13 @@ function gradeQuiz(e) {
                 resultText += "Question 3 is incorrect. B and D are correct.<br>";
             }
 
-            const q4 = document.querySelector('input[name="q4"]').value.trim();
-            if (q4 === "1993") { score++; resultText += "Q4: Correct<br>"; }
-            else { resultText += "Q4: Incorrect (Answer: 1993)<br>"; }
-
+            const q4Answers = Array.from(document.querySelectorAll('input[name="q4"]:checked')).map(cb => cb.value);
+            if (!q4Answers.includes("a") && q4Answers.includes("b") && q4Answers.includes("c") && q4Answers.includes("d")) {
+                score++; resultText += "Question 4 is correct!!!<br>";
+            } else {
+                resultText += "Question 4 is incorrect. B, C and D are correct.<br>";
+            }
+  
             const q5 = document.querySelector('input[name="q5"]').value.toLowerCase().trim();
             if (q5 === "") {
               alert("Please answer Question 5!!!")
