@@ -12,14 +12,22 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+/*
+<!-- REFERENCE -->
+<!-- Title: The Birth of The World Wide Web -->
+<!-- Author: Reece Woodard -->
+<!-- Date Accessed: July 7, 2026 -->
+<!-- Availability: https://reecewoodard.github.io/IT3203/quiz.html -->
+<!-- I used this code as a reference for the design of the quiz on this page. I modified it -->
+<!-- so that...--> */
 function gradeQuiz() {
             let score = 0;
             const total = 5;
             let resultText = "";
 
             const q1 = document.querySelector('input[name="q1"]:checked');
-            if (q1 && q1.value === "c") { score++; resultText += "Q1: Correct<br>"; }
-            else { resultText += "Q1: Incorrect (Answer: Tim Berners-Lee)<br>"; }
+            if (q1 && q1.value === "a") { score++; resultText += "Q1: Correct<br>"; }
+            else { resultText += "Q1: Incorrect (Answer: Hypertext Transfer Protocol)<br>"; }
 
             const q2 = document.querySelector('input[name="q2"]:checked');
             if (q2 && q2.value === "b") { score++; resultText += "Q2: Correct<br>"; }
