@@ -36,7 +36,7 @@ function gradeQuiz(e) {
             if (q1 && q1.value === "d") { score++; resultText += "<br>Question 1 is correct!!!<br>"; }
             else { resultText += "<br>Question 1 is incorrect. The correct answer is Hypertext Transfer Protocol.)<br>"; }
 
-            /*checks to see if the value for q2 = b. adds results to resultText string depending on q2.value.*/
+            /*checks to see if the value for q2 = a. adds results to resultText string depending on q2.value.*/
             const q2 = document.querySelector('input[name="q2"]:checked');
             if (q2 && q2.value === "a") { score++; resultText += "Question 2 is correct!!!<br>"; }
             else { resultText += "Question 2 is incorrect. The correct answer is A.<br>"; }
@@ -50,14 +50,11 @@ function gradeQuiz(e) {
                 resultText += "Question 3 is incorrect. B and D are correct.<br>";
             }
 
-            /*checks to what values were checked then looks through the list to see which were included.*/
-            /*it then compares those values to see if they were correct and adds the appropriate string to resultText.*/
-            const q4Answers = Array.from(document.querySelectorAll('input[name="q4"]:checked')).map(cb => cb.value);
-            if (!q4Answers.includes("a") && q4Answers.includes("b") && q4Answers.includes("c") && q4Answers.includes("d")) {
-                score++; resultText += "Question 4 is correct!!!<br>";
-            } else {
-                resultText += "Question 4 is incorrect. B, C and D are correct.<br>";
-            }
+            /*checks to see if the value for q4 = b. adds results to resultText string depending on q4.value.*/
+            const q4 = document.querySelector('input[name="q4"]:checked');
+            if (q4 && q4.value === "b") { score++; resultText += "Question 4 is correct!!!<br>"; }
+            else { resultText += "Question 4 is incorrect. The correct answer is A.<br>"; }
+
 
             /*Converts the input to lowercase and trims any extra space. If the box is empty, an alert is raised, appropriate string then added to resultText*/
             const q5 = document.querySelector('input[name="q5"]').value.toLowerCase().trim();
