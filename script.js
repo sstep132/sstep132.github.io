@@ -62,8 +62,8 @@ function gradeQuiz(e) {
               alert("Please answer Question 5!!!")
               return;
             }
-            if (q5 === "client") { score++; resultText += "Question 5 is correct!!!<br>"; }
-            else { resultText += "Question 5 is incorrect. The answer is client.<br>"; }
+            if (q5 === "latency") { score++; resultText += "Question 5 is correct!!!<br>"; }
+            else { resultText += "Question 5 is incorrect. The answer is latency.<br>"; }
          
           /* to add stars to show score. For each point they get a star full star and 5 minus score empty stars*/
             let stars = '<span class="fa fa-star checked"></span>'.repeat(score) + '<span class="fa fa-star"></span>'.repeat(5-score);
