@@ -48,6 +48,10 @@ h1 {
   margin: 0 auto;
   padding: 10px 20px;
 }
+/*to center h2*/
+h2 {
+  text-align: center;
+}
 /*for spacing heading above table*/
 h1.heading {
   padding-bottom: 20px;
