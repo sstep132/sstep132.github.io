@@ -56,28 +56,14 @@ function gradeQuiz(e) {
             }
             if (q5 === "client") { score++; resultText += "Question 5 is correct!!!<br>"; }
             else { resultText += "Question 5 is incorrect. The answer is client.<br>"; }
-         /* to add stars to show score. For each point they get a yellow star */
-            let stars = "";
-            if (score === 5) {
-              stars = "\u2B50\u2B50\u2B50\u2B50\u2B50";
-            }
-            else if (score === 4) {
-              stars = "\u2B50\u2B50\u2B50\u2B50\u2606";  
-            }
-            else if (score === 3) {
-              stars = "\u2B50\u2B50\u2B50\u2606\u2606";  
-            }
-            else if (score === 2) {
-              stars = "\u2B50\u2B50\u2606\u2606\u2606";  
-            }
-            else if (score === 1) {
-              stars = "\u2B50\u2606\u2606\u2606\u2606";  
-            }
+         
+          /* to add stars to show score. For each point they get a star full star and 5 minus score empty stars*/
+            let stars = '<span class="fa fa-star checked"></span>'.repeat(score) + '<span class="fa fa-star"></span>'.repeat(5-score);
   
             
 
             resultText += `<br><strong>Total Score: ${score}/${total}</strong><br>`;
-            resultText += score >= 3 ? "<br><span style='color:green'>You Passed!</span>" : "<span style='color:red'>You Failed.</span><br>";
+            resultText += score >= 3 ? "<br><span style='color:green'>Congratulations! You Passed!</span>" : "<span style='color:red'>Sorry. You Failed.</span><br>";
             resultText += `<br>Stars: ${stars}<br>`;
 
             document.getElementById("result").innerHTML = resultText;
