@@ -26,8 +26,8 @@ function gradeQuiz() {
             let resultText = "";
 
             const q1 = document.querySelector('input[name="q1"]:checked');
-            if (q1 && q1.value === "d") { score++; resultText += "<br><br><br>Question 1 is correct!!!<br>"; }
-            else { resultText += "<br><br><br>Question 1 is wrong. The correct answer is Hypertext Transfer Protocol.)<br>"; }
+            if (q1 && q1.value === "d") { score++; resultText += "<br>Question 1 is correct!!!<br>"; }
+            else { resultText += "<br>Question 1 is incorrect. The correct answer is Hypertext Transfer Protocol.)<br>"; }
 
             const q2 = document.querySelector('input[name="q2"]:checked');
             if (q2 && q2.value === "b") { score++; resultText += "Question 2 is correct!!!<br>"; }
