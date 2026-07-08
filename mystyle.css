@@ -79,6 +79,7 @@ h1.heading {
 .quiz-container {
   padding: 5px;
   padding-top: 60px;
+  padding-top: 20px;
   background-color: transparent;
 }
 table {
