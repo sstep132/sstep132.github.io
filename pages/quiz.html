@@ -50,8 +50,8 @@
 <!-- Author: Reece Woodard -->
 <!-- Date Accessed: July 7, 2026 -->
 <!-- Availability: https://reecewoodard.github.io/IT3203/quiz.html -->
-<!-- I used this code as a reference for the design of the quiz on this page. I modified it -->
-<!-- so that...--> 
+<!-- I used this code as a reference for the design of the quiz on this page. I modified it in this section -->
+<!-- by changing the questions and the way they are layed out--> 
         <section>
             <form id="quizForm">
                 <div class="question-block">
@@ -88,9 +88,10 @@
                     <label><input type="checkbox" name="q5" value="b"> Requires Flash plugin</label>
                     <label><input type="checkbox" name="q5" value="c"> Canvas and WebGL support</label>
                 </div>
-
+              <!--makes a button that calls the function gradeQuiz() in the js file.-->
                 <button type="button" onclick="gradeQuiz()">Submit</button>
-                <button type="reset">Restart</button>
+              <!--creates a button that resets the quiz-->
+                <button type="reset">Reset Quiz</button>
             </form>
 
             <div id="result"></div>
