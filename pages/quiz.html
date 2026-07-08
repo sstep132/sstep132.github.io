@@ -41,6 +41,59 @@
   <!--Container for content-->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
     <h1>A Quiz</h1>
+  <div class="container">
+        <header>
+            <h1>Test your knowledge on HTTP</h1>
+        </header>
+<!-- REFERENCE -->
+<!-- Title: The Birth of The World Wide Web -->
+<!-- Author: Reece Woodard -->
+<!-- Date Accessed: July 7, 2026 -->
+<!-- Availability: https://reecewoodard.github.io/IT3203/quiz.html -->
+<!-- I used this code as a reference for the design of the quiz on this page. I modified it -->
+<!-- so that 
+        <section>
+            <form id="quizForm">
+                <div class="question-block">
+                    <p>1. question</p>
+                    <label><input type="radio" name="q1" value="a"> ans1</label>
+                    <label><input type="radio" name="q1" value="b"> ans2</label>
+                    <label><input type="radio" name="q1" value="c"> ans3</label>
+                </div>
+
+                <div class="question-block">
+                    <p>2. question?</p>
+                    <label><input type="radio" name="q2" value="a"> 2008</label>
+                    <label><input type="radio" name="q2" value="b"> 2014</label>
+                    <label><input type="radio" name="q2" value="c"> 2020</label>
+                </div>
+
+                <div class="question-block">
+                    <p>3. question?</p>
+                    <label><input type="radio" name="q3" value="a"> HighText Machine Language</label>
+                    <label><input type="radio" name="q3" value="b"> HyperText Markup Language</label>
+                    <label><input type="radio" name="q3" value="c"> Hyperlink and Text Markup Language</label>
+                </div>
+
+                <div class="question-block">
+                    <p>4. Fill in the blank:____.</p>
+                    <input type="text" name="q4">
+                </div>
+
+                <div class="question-block">
+                    <p>5.Which are true about HTTP?  (Select all that are true)</p>
+                    <label><input type="checkbox" name="q5" value="a"> Native video and audio support</label>
+                    <label><input type="checkbox" name="q5" value="b"> Requires Flash plugin</label>
+                    <label><input type="checkbox" name="q5" value="c"> Canvas and WebGL support</label>
+                </div>
+
+                <button type="button" onclick="gradeQuiz()">Submit</button>
+                <button type="reset">Restart</button>
+            </form>
+
+            <div id="result"></div>
+        </section>
+    </div>
     <nav class="w3-padding-16">
       <!-- To go to index -->
       <a href="../index.html"> Back to Homepage</a>
