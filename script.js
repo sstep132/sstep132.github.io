@@ -44,9 +44,10 @@ function gradeQuiz() {
             if (q4 === "1993") { score++; resultText += "Q4: Correct<br>"; }
             else { resultText += "Q4: Incorrect (Answer: 1993)<br>"; }
 
-            const q5 = document.querySelector('input[name="q"]').value.tolowercase.trim();
+            const q5 = document.querySelector('input[name="q5"]').value.toLowerCase.trim();
             if (q5 === "") {
               alert("Please answer Question 5!!!")
+              return;
             }
             if (q5 === "client") { score++; resultText += "Question 4 is correct!!!<br>"; }
             else { resultText += "Question 4 is incorrect. The answer is client.<br>"; }
