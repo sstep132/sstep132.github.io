@@ -44,12 +44,12 @@ function gradeQuiz() {
             if (q4 === "1993") { score++; resultText += "Q4: Correct<br>"; }
             else { resultText += "Q4: Incorrect (Answer: 1993)<br>"; }
 
-            const q5Answers = Array.from(document.querySelectorAll('input[name="q5"]:checked')).map(cb => cb.value);
-            if (q5Answers.includes("a") && q5Answers.includes("c") && !q5Answers.includes("b")) {
-                score++; resultText += "Q5: Correct<br>";
-            } else {
-                resultText += "Q5: Incorrect (Answer: a and c)<br>";
+            const q5 = document.querySelector('input[name="q"]').value.tolowercase.trim();
+            if (q5 === "") {
+              alert("Please answer Question 5!!!")
             }
+            if (q5 === "client") { score++; resultText += "Question 4 is correct!!!<br>"; }
+            else { resultText += "Question 4 is incorrect. The answer is client.<br>"; }
 
             resultText += `<br><strong>Total Score: ${score}/${total}</strong><br>`;
             resultText += score >= 3 ? "<span style='color:green'>You Passed!</span>" : "<span style='color:red'>You Failed.</span>";
