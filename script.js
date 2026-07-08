@@ -61,16 +61,16 @@ function gradeQuiz(e) {
             if (score === 5) {
               stars = "\u2B50\u2B50\u2B50\u2B50\u2B50";
             }
-            elseif (score === 4) {
+            else if (score === 4) {
               stars = "\u2B50\u2B50\u2B50\u2B50\u2606";  
             }
-            elseif (score === 3) {
+            else if (score === 3) {
               stars = "\u2B50\u2B50\u2B50\u2606\u2606";  
             }
-            elseif (score === 2) {
+            else if (score === 2) {
               stars = "\u2B50\u2B50\u2606\u2606\u2606";  
             }
-            elseif (score === 1) {
+            else if (score === 1) {
               stars = "\u2B50\u2606\u2606\u2606\u2606";  
             }
   
