@@ -33,9 +33,12 @@ function gradeQuiz() {
             if (q2 && q2.value === "b") { score++; resultText += "Question 2 is correct!!!<br>"; }
             else { resultText += "Question 2 is incorrect. The correct answer is False.<br>"; }
 
-            const q3 = document.querySelector('input[name="q3"]:checked');
-            if (q3 && q3.value === "b") { score++; resultText += "Q3: Correct<br>"; }
-            else { resultText += "Q3: Incorrect (Answer: HyperText Markup Language)<br>"; }
+            const q3Answers = Array.from(document.querySelectorAll('input[name="q3"]:checked')).map(cb => cb.value);
+            if (q3Answers.includes("b") && q3Answers.includes("d") && !q3Answers.includes("a") && !q3Answers.includes("c")) {
+                score++; resultText += "Question 3 is correct!!!<br>";
+            } else {
+                resultText += "Question 3 is incorrect. B and D are correct.<br>";
+            }
 
             const q4 = document.querySelector('input[name="q4"]').value.trim();
             if (q4 === "1993") { score++; resultText += "Q4: Correct<br>"; }
