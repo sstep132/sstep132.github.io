@@ -44,7 +44,7 @@ function gradeQuiz() {
             if (q4 === "1993") { score++; resultText += "Q4: Correct<br>"; }
             else { resultText += "Q4: Incorrect (Answer: 1993)<br>"; }
 
-            const q5 = document.querySelector('input[name="q5"]').value.toLowerCase.trim();
+            const q5 = document.querySelector('input[name="q5"]').value.toLowerCase().trim();
             if (q5 === "") {
               alert("Please answer Question 5!!!")
               return;
