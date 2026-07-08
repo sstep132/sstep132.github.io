@@ -19,7 +19,7 @@ function myFunction() {
 <!-- Date Accessed: July 7, 2026 -->
 <!-- Availability: https://reecewoodard.github.io/IT3203/quiz.html -->
 <!-- I used this code as a reference for the design of the quiz on this page. I modified it -->
-<!-- so that...--> */
+<!-- so that the questions are different and --> */
 function gradeQuiz(e) {
   /*passing the event in to stop the page from reloading*/
             if (e) e.preventDefault();
@@ -56,9 +56,29 @@ function gradeQuiz(e) {
             }
             if (q5 === "client") { score++; resultText += "Question 5 is correct!!!<br>"; }
             else { resultText += "Question 5 is incorrect. The answer is client.<br>"; }
+         /* to add stars to show score. For each point they get a yellow star */
+            let stars = "";
+            if (score === 5) {
+              stars = "\u2B50\u2B50\u2B50\u2B50\u2B50";
+            }
+            elseif (score === 4) {
+              stars = "\u2B50\u2B50\u2B50\u2B50\u2606";  
+            }
+            elseif (score === 3) {
+              stars = "\u2B50\u2B50\u2B50\u2606\u2606";  
+            }
+            elseif (score === 2) {
+              stars = "\u2B50\u2B50\u2606\u2606\u2606";  
+            }
+            elseif (score === 1) {
+              stars = "\u2B50\u2606\u2606\u2606\u2606";  
+            }
+  
+            
 
             resultText += `<br><strong>Total Score: ${score}/${total}</strong><br>`;
-            resultText += score >= 3 ? "<span style='color:green'>You Passed!</span>" : "<span style='color:red'>You Failed.</span>";
+            resultText += score >= 3 ? "<br><span style='color:green'>You Passed!</span>" : "<span style='color:red'>You Failed.</span><br>";
+            resultText += `<br>Stars: ${stars}<br>`;
 
             document.getElementById("result").innerHTML = resultText;
         }
