@@ -10,7 +10,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 footer {
-  margin: 20px;
+  padding: 30px;
 }
 /*Instructions on where w3-top is for the navbar*/
 .w3-top {
