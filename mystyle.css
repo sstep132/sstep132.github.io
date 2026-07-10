@@ -52,9 +52,9 @@ h1 {
 h2 {
   text-align: center;
 }
-/*for spacing heading above table*/
+/*for spacing heading below table*/
 h1.heading {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 /* to link areas*/
 .image {
