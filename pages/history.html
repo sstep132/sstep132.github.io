@@ -106,6 +106,19 @@
       </tbody>
     </table>
   </div>
+    <!--Container for content-->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2>HTTP/0.9</h2>
+    <p>The first version of HTTP is also called the one-line protocol and was given the number 0.9 to distinguish it from the versions that came later, as they were developed. The HTTP requests in HTTP/0.9 were simple and only had a single line of content. The only action available to request at this time was GET, which preceded the path to the requested resource. The response from this version lacked any headers or status codes. Instead, it contained only an HTML file, so the browser could display a webpage that only contained text.</p>
+    <h2>HTTP/1.0</h2>
+    <p>When HTTP/1.0 was introduced in 1993, there were many improvements to its functionality. Requests for this version changed quite a bit. At the end of the GET line, a version number was added, as well as a line for a status code. This enabled the client to see whether the request was successful or not. HTTP/1.0 also had HTTP headers that stored metadata. The addition of the Content-Type header allowed for files to be requested that were of different types of content, such as images and zip files (“Evolution of”, 2026). An important feature that was included in HTTP/1.0 was the hyperlinks, which allowed documents to be linked together so that a user could easily click from one to another in a web-like structure. The way that things were displayed to the user depended on the browser since CSS support was not available at this stage, but basic tags were introduced, which helped to organize and structure the information to make it more readable to humans (Dhangar, 2024).</p>
+    <h2>HTTP/1.1</h2>
+    <p>Developers were working on HTTP/1.1 while HTTP/1.0 was being released. HTTP/1.1 was a standardized version that allowed different devices running different versions of software to work together smoothly. One of the many upgrades to this version was the ability for the browser to reuse a TCP connection. This saved time because opening a TCP connection each time a request was made was time-consuming. Some browsers allowed multiple TCP connections because only one resource could be requested and downloaded at a time. This made it much faster when the browser needed more than one resource instead of taking a one-by-one approach. Controls for caching were added, as well as a mechanism for pipelining to improve communication latency (“Evolution of”, 2026).</p>
+    <h2>HTTP/2</h2> 
+    <p>HTTP/2 was published by the IETF in 1995 and was designed to solve some of the problems that previous versions had. The use of multiple connections and reused connections with HTTP1.1 showed significant improvement in speed and cost, but users were still battling head-of-line blocking and request concurrency issues. HTTP/2 solved this problem by enabling users to use a single connection to send concurrent requests and response messages. Requests can also be prioritized so that they can be fulfilled in order of importance instead of the order that they were received to improve function and speed (Belshe et al., 2015).</p>
+    <h2>HTTP/3</h2>
+    <p>Learn more about <a href="current.html">current HTTP/3 protocols</a></p>
+  </div>
   <!--creates a footer with link to homepage-->
   <footer>
      <!-- To go to index -->
