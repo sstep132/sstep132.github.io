@@ -41,6 +41,19 @@
   <!--Container for content-->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
     <h1>The Current State of HTTP</h1>
+     <div class="w3-row">
+      <div class="w3-third w3-container">
+        <img src="../images/clientserver.jpg" alt="An example of Client/Server architecture">
+        <p>Image by <a href="https://pixabay.com/users/sandra_schoen-53876/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=341420">sandra_schoen</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=341420">Pixabay</a></p>
+      </div>
+      </div>
+      <!--column 2-->
+      <div class="w3-twothird w3-container">
+        <p>There was a marked advancement in latency with the implementation of HTTP/3 because it uses the QUIC protocol instead of TCP, and it is the most advanced of the technologies. Since QUIC uses UDP to run multiple streams, the multiplexing works more efficiently. If there is packet loss and a stream needs to be blocked, UDP allows a single stream to be blocked, which is an improvement over having to block all streams on the TCP connection. This allows the transmission of data to continue on the other streams using the QUIC protocol (“Evolution of”, 2026).</p>
+        <p>Although HTTP/3 is the most advanced and provides the most benefits, it’s still not the most widely used in systems today. There are many reasons why this is true. One is that a corporate proxy might not support the newer version of HTTP, so it could downgrade it to a lower version so that its legacy system could handle it. Other reasons could include firewalls that block all UDP traffic, a device, or a middlebox, between the client and server that strips or drops UDP packets, or it could be caused by routers that are not up to date. According to Kuruba (2025), when he analyzed his company's load balancer logs, he found that 63 percent of all requests they received were coming from the older version HTTP/1.1. This makes it clear that companies could improve their latency and reduce costs if they are willing to invest in upgrades.</p>
+      </div>
+    </div>
+  </div>
     <p>There was a marked advancement in latency with the implementation of HTTP/3 because it uses the QUIC protocol instead of TCP, and it is the most advanced of the technologies. Since QUIC uses UDP to run multiple streams, the multiplexing works more efficiently. If there is packet loss and a stream needs to be blocked, UDP allows a single stream to be blocked, which is an improvement over having to block all streams on the TCP connection. This allows the transmission of data to continue on the other streams using the QUIC protocol (“Evolution of”, 2026).
   Although HTTP/3 is the most advanced and provides the most benefits, it’s still not the most widely used in systems today. There are many reasons why this is true. One is that a corporate proxy might not support the newer version of HTTP, so it could downgrade it to a lower version so that its legacy system could handle it. Other reasons could include firewalls that block all UDP traffic, a device, or a middlebox, between the client and server that strips or drops UDP packets, or it could be caused by routers that are not up to date. According to Kuruba (2025), when he analyzed his company's load balancer logs, he found that 63 percent of all requests they received were coming from the older version HTTP/1.1. This makes it clear that companies could improve their latency and reduce costs if they are willing to invest in upgrades.
     </p>
