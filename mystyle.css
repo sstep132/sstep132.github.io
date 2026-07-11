@@ -103,7 +103,7 @@ table {
   border: 3px solid #ff4436;
   padding: 30px;
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 /* This makes the whole answer to be clickable instead of just the text and adds more space for clicking*/
