@@ -80,3 +80,7 @@ function gradeQuiz(e) {
 
             document.getElementById("result").innerHTML = resultText;
         }
+/*This will allow the text results to clear in quiz*/
+function clearResults() {
+  document.getElementById("result").innerHTML = "";
+}
