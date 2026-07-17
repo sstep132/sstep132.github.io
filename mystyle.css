@@ -141,7 +141,7 @@ color: yellow;
     grid-template-areas:
       "image content"
       "footer footer";
-    grid-template-columns: 1fr 2 fr;
+    grid-template-columns: 1fr 2fr;
   }
   /*Makes quiz boxes larger*/
   .question-block {
@@ -154,12 +154,5 @@ color: yellow;
     background-color: transparent;
   }
 }
-/*This will break up the lines so it doesn't stretch the columns*/
-.content ul,
-.content li,
-.content a {
-  word-break: break-all;
-  overflow-wrap: anywhere;
-}
- 
+
 
