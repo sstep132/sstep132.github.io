@@ -148,7 +148,7 @@ color: yellow;
   }
 }
 /*make the question blocks transparent on large screen*/
-@media (min-width: 1024) {
+@media (min-width: 1024px) {
   .question-block {
     background-color: transparent;
   }
