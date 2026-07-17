@@ -141,6 +141,9 @@ color: yellow;
   h1 {
     font-size: 32px;
   }
+  li {
+    font-size: 18px;
+  }
   /*change container to fractional side by side for tablet and desktop*/
   .container {
     grid-template-areas:
