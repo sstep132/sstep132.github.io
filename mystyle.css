@@ -147,6 +147,12 @@ color: yellow;
     padding: 30px;
   }
 }
+/*make the question blocks transparent on large screen*/
+@media (min-width: 1024) {
+  .question-block {
+    background-color: transparent;
+  }
+}
   
  
 
