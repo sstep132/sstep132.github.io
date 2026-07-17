@@ -149,7 +149,7 @@ color: yellow;
   }
 }
 /*the makes quiz questions smaller when not on desktop*/
-@media (max-width: 1024px), (max-width: 768px) {
+@media (max-width: 1024px) {
   .question-block {
     padding: 15px;
   }
