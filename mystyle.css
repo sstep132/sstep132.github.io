@@ -154,6 +154,10 @@ color: yellow;
     background-color: transparent;
   }
 }
-  
+/*This will break up the lines so it doesn't stretch the columns*/
+ul, li, a {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
  
 
