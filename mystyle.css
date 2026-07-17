@@ -134,6 +134,7 @@ color: yellow;
   body {
     padding-left: 30px;
     padding-right: 30px;
+    font-size: 18px;
   }
   
   /*change container to fractional side by side for tablet and desktop*/
