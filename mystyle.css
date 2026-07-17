@@ -126,10 +126,10 @@ table {
 .checked {
 color: yellow;
 }
-/*for tablets*/
+/*the makes quiz questions smaller when not on desktop*/
 @media (max-width: 1024px) {
-  .container{
-    grid-template-columns: 1fr 1fr;
+  .question-block {
+    padding: 15px;
   }
 }
 /*For mobile switches from being split up to being all vertical*/
