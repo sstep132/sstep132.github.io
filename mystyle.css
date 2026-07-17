@@ -155,7 +155,9 @@ color: yellow;
   }
 }
 /*This will break up the lines so it doesn't stretch the columns*/
-ul, li, a {
+.content ul,
+.content li,
+.content a {
   word-break: break-all;
   overflow-wrap: anywhere;
 }
