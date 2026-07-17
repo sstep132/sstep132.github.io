@@ -81,8 +81,8 @@ h1.heading {
   margin-right: auto;
   padding: 20px;
   max-width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  box-sizing: border-box;
 }
 /*for table container so table fits*/
 .table-container {
