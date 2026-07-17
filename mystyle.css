@@ -126,12 +126,6 @@ table {
 .checked {
 color: yellow;
 }
-/*the makes quiz questions smaller when not on desktop*/
-@media (max-width: 1024px), (max-width: 768px) {
-  .question-block {
-    padding: 15px;
-  }
-}
 /*For mobile switches from being split up to being all vertical*/
 @media (max-width: 768px) {
   /*make padding smaller for small screens*/
@@ -154,4 +148,11 @@ color: yellow;
   height: auto;
   }
 }
+/*the makes quiz questions smaller when not on desktop*/
+@media (max-width: 1024px), (max-width: 768px) {
+  .question-block {
+    padding: 15px;
+  }
+}
+
 
