@@ -119,7 +119,7 @@ table {
 
 /* Referencing https://www.w3schools.com/CSSref/sel_hover.php for the hover effect that makes the answers in quiz underlined, cursor changed to pointer and change color*/
 .question-block label:hover {
-  color: yellow;
+  color: green;
   text-decoration: underline;
   cursor: pointer;
 }
