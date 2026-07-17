@@ -141,7 +141,7 @@ color: yellow;
   h1 {
     font-size: 32px;
   }
-  li {
+  li, li a {
     font-size: 18px;
   }
   /*change container to fractional side by side for tablet and desktop*/
